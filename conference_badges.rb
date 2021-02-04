@@ -25,6 +25,12 @@ end
 return room_assignments
 end
 
-def printer
+def printer(attendees)
+  badges.each do |hello|
+    puts hello
+  end
+  room_assignments.each do |room|
+    puts room
+  end
 
 end
