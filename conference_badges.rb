@@ -14,10 +14,14 @@ return badges
 end
 
 
-def assign_rooms
-
+def assign_rooms(attendees)
+room_assignments = []
+  attendees.each_with_index(1) do |name, index|
+room_assignment = "Hello, #{name}! You'll be assigned to room #{index}!"
+room_assignments << room_assignment
 end
-
+return room_assignments
+end
 
 def printer
 
